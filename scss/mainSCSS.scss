@@ -1,0 +1,211 @@
+//mixin
+@mixin btn{
+    padding: 10px 30px;
+    background-color: #07b569;
+
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+//body
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+//container
+
+.container {
+    max-width: 1230px;
+
+    margin: 0 auto;
+}
+
+//section
+.section {
+    margin: 0 15px;
+    &__about-us {
+        padding: 0 0 120px 0;
+    }
+    &__ourProject{
+        margin: 0;
+        padding-bottom: 120px;
+    }
+}
+
+//header
+.header {
+    background: url('../img/header/beg.png') center no-repeat;
+
+    margin:0 0 120px 0;
+
+    &__content {
+        margin: 0 15px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 54px 0 0 0;
+    }
+
+    &__icon {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    &__navigat {
+        display: flex;
+    }
+
+    &__navMenu {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+    }
+    &__navMenu p{
+        margin-right: 32px;
+
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+    &__navMenu p:last-child{
+        margin-right: 0;
+    }
+
+    &__btn {
+        margin-left: 38px;
+        @include btn;
+    }
+
+    &__title {
+        padding: 150px 0 220px;
+        margin: 0 auto;
+        text-align: center;
+
+        font-size: 54px;
+        line-height: 1.2;
+        font-weight: 400;
+        max-width: 870px;
+    }
+    &__title span{
+        font-weight: 700;
+    }
+}
+
+//aboutUS
+.aboutUs {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width:570px; 
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #1b1b1b;
+
+        margin: 2% 0 5% 0;
+    }
+
+    &__text {
+        opacity: 0.48;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #1b1b1b;
+
+        margin-bottom: 37px;
+    }
+
+    &__btn {
+        @include btn;
+        display: inline-block;
+    }
+
+    &__objects{
+        margin-top: 120px;
+    }
+
+    &__column {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 83px;
+    }
+    &__column:last-child{
+        margin-bottom: 0;
+    }
+
+    &__item {
+        width: 28%;
+
+        text-align: center;
+    }
+
+    &__colImg {
+        margin-bottom: 21px;
+    }
+
+    &__colTitle {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #1d1d1d;
+
+        margin-bottom: 40px;
+    }
+
+    &__colText {
+        opacity: 0.7;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #1d1d1d;
+    }
+}
+
+//ourProject
+.ourProject {
+
+    &__text {
+        font-size: 36px;
+        line-height: 30px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #1d1d1d;
+
+        margin-bottom: 60px;
+    }
+
+    &__colImg {
+        display: flex;
+    }
+
+    &__img {
+        width: 25%;
+        height: auto;
+    }
+    &__img img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__btn {
+        @include btn;
+        display: inline-block;
+
+        margin-top: 60px;
+    }
+}

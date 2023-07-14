@@ -1,0 +1,194 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 0 15px;
+}
+.section__about-us {
+  padding: 0 0 120px 0;
+}
+.section__ourProject {
+  margin: 0;
+  padding-bottom: 120px;
+}
+
+.header {
+  background: url("../img/header/beg.png") center no-repeat;
+  margin: 0 0 120px 0;
+}
+.header__content {
+  margin: 0 15px;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 54px 0 0 0;
+}
+.header__icon {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.header__navigat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__navMenu p {
+  margin-right: 32px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.header__navMenu p:last-child {
+  margin-right: 0;
+}
+.header__btn {
+  margin-left: 38px;
+  padding: 10px 30px;
+  background-color: #07b569;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.header__title {
+  padding: 150px 0 220px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 54px;
+  line-height: 1.2;
+  font-weight: 400;
+  max-width: 870px;
+}
+.header__title span {
+  font-weight: 700;
+}
+
+.aboutUs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutUs__info {
+  max-width: 570px;
+}
+.aboutUs__title {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #1b1b1b;
+  margin: 2% 0 5% 0;
+}
+.aboutUs__text {
+  opacity: 0.48;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #1b1b1b;
+  margin-bottom: 37px;
+}
+.aboutUs__btn {
+  padding: 10px 30px;
+  background-color: #07b569;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-block;
+}
+.aboutUs__objects {
+  margin-top: 120px;
+}
+.aboutUs__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 83px;
+}
+.aboutUs__column:last-child {
+  margin-bottom: 0;
+}
+.aboutUs__item {
+  width: 28%;
+  text-align: center;
+}
+.aboutUs__colImg {
+  margin-bottom: 21px;
+}
+.aboutUs__colTitle {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #1d1d1d;
+  margin-bottom: 40px;
+}
+.aboutUs__colText {
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #1d1d1d;
+}
+
+.ourProject__text {
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #1d1d1d;
+  margin-bottom: 60px;
+}
+.ourProject__colImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ourProject__img {
+  width: 25%;
+  height: auto;
+}
+.ourProject__img img {
+  max-width: 100%;
+  height: auto;
+}
+.ourProject__btn {
+  padding: 10px 30px;
+  background-color: #07b569;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 60px;
+}
