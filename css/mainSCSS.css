@@ -341,3 +341,60 @@ body {
 .contactsUs__btn-cen {
   text-align: center;
 }
+
+.footer {
+  background: url("../img/footer/footimg.png");
+}
+.footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 120px 0;
+}
+.footer__solar {
+  width: 40%;
+}
+.footer__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+.footer__solat-subTitle {
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.footer__solat-title {
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.footer__info {
+  width: 17%;
+}
+.footer__info-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+.footer__info-adres {
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.footer__info-social {
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}

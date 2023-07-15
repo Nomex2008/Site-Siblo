@@ -330,8 +330,6 @@ body{
         margin-bottom: 5px;
     }
 
-    &__map {
-    }
 
     &__send {
         width: 45%;
@@ -387,5 +385,71 @@ body{
     }
     &__btn-cen{
         text-align: center;
+    }
+}
+
+//footer
+.footer {
+    background: url('../img/footer/footimg.png');
+    &__main{
+        display: flex;
+        justify-content: space-between;
+
+        padding: 120px 0;
+    }
+    &__solar {
+        width: 40%;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+
+        margin-bottom: 45px;
+    }
+
+    &__solat-subTitle {
+        opacity: 0.7;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+
+        margin-bottom: 35px;
+    }
+
+    &__solat-title {
+        opacity: 0.7;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    &__info {
+        width: 17%;
+    }
+
+    &__info-title {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+
+        margin-bottom: 45px;
+    }
+
+    &__info-adres {
+        opacity: 0.7;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+
+        margin-bottom: 35px;
+    }
+
+    &__info-social {
+        opacity: 0.7;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
     }
 }
