@@ -7,6 +7,7 @@
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
+    cursor: pointer;
 }
 //body
 body{
@@ -67,6 +68,7 @@ body{
         font-size: 24px;
         line-height: 30px;
         font-weight: 700;
+        color: #ffffff;
     }
 
     &__navigat {
@@ -78,6 +80,7 @@ body{
         justify-content: space-between;
 
         align-items: center;
+        cursor: pointer;
     }
     &__navMenu p{
         margin-right: 32px;
@@ -613,12 +616,10 @@ body{
 @media(max-width:778px){
     //header
     .header {
-        background: url('../img/header/beg.png') center no-repeat;
+        margin:0 0 80px 0;
 
-        margin:0 0 120px 0;
-
-        &__content {
-            margin: 0 15px;
+        &__title{
+            font-size: 30px;
         }
 
         &__menu {
@@ -626,44 +627,96 @@ body{
             justify-content: space-between;
 
             padding: 54px 0 0 0;
-        }
 
-        &__icon {
-            font-size: 24px;
-            line-height: 30px;
-            font-weight: 700;
+            position: relative;
         }
 
         &__navigat {
+            position: fixed;
+            
+            right: 100%;
+            top: 14%;
+            
+            background-color: #696262;
+            width: 100%;
+            z-index: 0;
+
             display: flex;
-            display: none;
+            flex-direction: column;
+
+            transition: all .3s ease;
+            
+        }
+        &__navigat.active{
+            right: 0;
         }
 
         &__navMenu {
-            display: flex;
+            flex-direction: column;
             justify-content: space-between;
 
             align-items: center;
         }
         &__navMenu p{
-            margin-right: 32px;
-
-            font-size: 14px;
-            line-height: 30px;
-            font-weight: 700;
+            margin-right: 0;
         }
         &__navMenu p:last-child{
             margin-right: 0;
         }
+        &__burger{
+            position: fixed;
+            top: 8%;
+            right: 15%;
+
+            transition: all .3s ease;
+        }
+        &__burger:before,
+        &__burger::after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 35px;
+            height: 3px;
+            background-color: #9183b4;
+
+            transition: all .3s ease;
+        }
+        &__burger span{
+            position: absolute;
+            display: block;
+            width: 35px;
+            height: 3px;
+            background-color: #9183b4;
+            bottom: -4px;
+
+            transition: all .3s ease;
+        }
+        &__burger:before{
+            bottom: 4px;
+        }
+        &__burger::after{
+            bottom: -12px;
+        }
+        &__burger.active span{
+            width: 0;
+        }
+        &__burger.active:before{
+            bottom: -4px;
+            rotate: 45deg;
+        }
+        &__burger.active::after{
+            bottom: -4px;
+            rotate: -45deg;
+        }
 
         &__btn {
-            margin-left: 38px;
-            @include btn;
+            margin-left: 0;
+            text-align: center;
         }
 
         &__title {
-            font-size: 30px;
-            line-height: 1;
+            margin: 110px 0 220px 0;
+            padding: 100px 0 200px 0;
         }
     }
     //aboutUS

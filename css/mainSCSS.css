@@ -51,6 +51,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  color: #ffffff;
 }
 .header__navigat {
   display: -webkit-box;
@@ -67,6 +68,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .header__navMenu p {
   margin-right: 32px;
@@ -85,6 +87,7 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
 }
 .header__title {
   padding: 150px 0 220px;
@@ -143,6 +146,7 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
   display: inline-block;
 }
 .aboutUs__objects {
@@ -212,6 +216,7 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
   display: inline-block;
   margin-top: 60px;
 }
@@ -356,6 +361,7 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
   display: inline-block;
 }
 .contactsUs__btn-cen {
@@ -525,11 +531,10 @@ body {
 }
 @media (max-width: 778px) {
   .header {
-    background: url("../img/header/beg.png") center no-repeat;
-    margin: 0 0 120px 0;
+    margin: 0 0 80px 0;
   }
-  .header__content {
-    margin: 0 15px;
+  .header__title {
+    font-size: 30px;
   }
   .header__menu {
     display: -webkit-box;
@@ -539,22 +544,33 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 54px 0 0 0;
-  }
-  .header__icon {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
+    position: relative;
   }
   .header__navigat {
+    position: fixed;
+    right: 100%;
+    top: 14%;
+    background-color: #696262;
+    width: 100%;
+    z-index: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__navigat.active {
+    right: 0;
   }
   .header__navMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -563,26 +579,62 @@ body {
             align-items: center;
   }
   .header__navMenu p {
-    margin-right: 32px;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 700;
+    margin-right: 0;
   }
   .header__navMenu p:last-child {
     margin-right: 0;
   }
+  .header__burger {
+    position: fixed;
+    top: 8%;
+    right: 15%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__burger:before, .header__burger::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #9183b4;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__burger span {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #9183b4;
+    bottom: -4px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__burger:before {
+    bottom: 4px;
+  }
+  .header__burger::after {
+    bottom: -12px;
+  }
+  .header__burger.active span {
+    width: 0;
+  }
+  .header__burger.active:before {
+    bottom: -4px;
+    rotate: 45deg;
+  }
+  .header__burger.active::after {
+    bottom: -4px;
+    rotate: -45deg;
+  }
   .header__btn {
-    margin-left: 38px;
-    padding: 10px 30px;
-    background-color: #07b569;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #ffffff;
+    margin-left: 0;
+    text-align: center;
   }
   .header__title {
-    font-size: 30px;
-    line-height: 1;
+    margin: 110px 0 220px 0;
+    padding: 100px 0 200px 0;
   }
   .aboutUs__content {
     display: block;
@@ -669,6 +721,7 @@ body {
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
+    cursor: pointer;
     display: inline-block;
     margin-top: 40px;
   }
@@ -752,6 +805,7 @@ body {
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
+    cursor: pointer;
     display: inline-block;
     margin-top: 30px;
   }
